@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AlcoolOuGasolina" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#FF4081</item> <!-- Pink -->
+        <item name="colorPrimaryVariant">#D81B60</item> <!-- Darker Pink -->
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryDark">#880E4F</item> <!-- Dark Pink -->
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#FF80AB</item> <!-- Light Pink -->
+        <item name="colorSecondaryVariant">#C51162</item> <!-- Dark Pink -->
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Customize your theme here. -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorHint">#818181</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+</resources>
