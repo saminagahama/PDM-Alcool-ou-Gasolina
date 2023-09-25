@@ -20,21 +20,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Initialize UI elements
         edAlcool = findViewById(R.id.edGasolina)
         edGasolina = findViewById(R.id.edAlcool)
         swPercentual = findViewById(R.id.swPercentual)
         resultadoTextView = findViewById(R.id.resultado)
 
-        // Restore the saved percentage value
         if (savedInstanceState != null) {
             percentual = savedInstanceState.getDouble("percentual")
         }
 
-        // Set the initial state of the switch
         swPercentual.isChecked = (percentual == 0.75)
 
-        // Calculate and display the result when the button is clicked
         val btCalc: Button = findViewById(R.id.btCalcular)
         btCalc.setOnClickListener(View.OnClickListener {
             val alcoolPrice = edAlcool.text.toString().toDoubleOrNull()
@@ -48,7 +44,6 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        // Toggle the percentage when the switch is clicked
         swPercentual.setOnCheckedChangeListener { _, isChecked ->
             percentual = if (isChecked) 0.75 else 0.7
         }
