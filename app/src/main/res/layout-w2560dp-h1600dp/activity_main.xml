@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
-    android:backgroundTint="@color/purple_200"
+    android:background="#000000"
+    android:backgroundTint="#000000"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="550dp"
+        android:layout_width="1000dp"
+        android:layout_height="800dp"
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
         android:background="@drawable/rounded_layout"
-        android:backgroundTint="?android:backgroundTint"
+        android:backgroundTint="#2B1632"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,7 +24,7 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="126dp"
             android:layout_gravity="center_horizontal"
             android:contentDescription="uma bomba de gasolina ilustrando o app"
             android:paddingVertical="10dp"
@@ -39,8 +39,8 @@
             android:layout_marginBottom="10dp"
             android:text="@string/title"
             android:textAlignment="center"
-            android:textColor="#9C7397"
-            android:textSize="25sp"
+            android:textColor="#FFB9F6"
+            android:textSize="50dp"
             android:textStyle="bold" />
 
         <EditText
@@ -50,7 +50,8 @@
             android:layout_marginHorizontal="30dp"
             android:ems="10"
             android:hint="@string/gasolina_hint"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:textSize="32dp" />
 
         <EditText
             android:id="@+id/edAlcool"
@@ -59,7 +60,8 @@
             android:layout_marginHorizontal="30dp"
             android:ems="10"
             android:hint="@string/alcool_hint"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:textSize="32dp" />
 
         <Switch
             android:id="@+id/swPercentual"
@@ -67,7 +69,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginHorizontal="30dp"
-            android:text="@string/switch_text" />
+            android:text="@string/switch_text"
+            android:textSize="32dp"
+            android:thumbTint="#FFFFFF" />
 
         <Button
             android:id="@+id/btCalcular"
@@ -76,7 +80,8 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="20dp"
             android:backgroundTint="#A465AF"
-            android:text="@string/calculate_button_text" />
+            android:text="@string/calculate_button_text"
+            android:textSize="32dp" />
 
         <TextView
             android:id="@+id/resultado"
@@ -86,12 +91,12 @@
             android:layout_marginTop="20dp"
             android:text=""
             android:textAlignment="center"
-            android:textColor="#000"
-            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textSize="32dp"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/btCalcular"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/btCalcular" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
