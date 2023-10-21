@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
-            android:text="Gasolina ou Álcool?"
+            android:text="@string/title"
             android:textAlignment="center"
             android:textColor="#FFB9F6"
             android:textSize="25sp"
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:ems="10"
-            android:hint="Preço da gasolina"
+            android:hint="@string/gasolina_hint"
             android:inputType="numberDecimal" />
 
         <EditText
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:ems="10"
-            android:hint="Preço do álcool"
+            android:hint="@string/alcool_hint"
             android:inputType="numberDecimal" />
 
         <Switch
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_marginHorizontal="30dp"
-            android:text="75%"
+            android:text="@string/switch_text"
             android:thumbTint="#FFFFFF" />
 
         <Button
@@ -77,7 +77,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="20dp"
             android:backgroundTint="#A465AF"
-            android:text="Calcular" />
+            android:text="@string/calculate_button_text" />
 
         <TextView
             android:id="@+id/resultado"

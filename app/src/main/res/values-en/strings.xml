@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_title">With which fuel?</string>
+
+    <string name="title">Gasoline or Alcohol?</string>
+    <string name="gasolina_hint">Gasoline price</string>
+    <string name="alcool_hint">Alcohol price</string>
+
+    <string name="switch_text">75%</string>
+
+    <string name="calculate_button_text">Calculate</string>
+</resources>
